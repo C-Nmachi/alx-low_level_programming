@@ -1,8 +1,8 @@
-#include <stdio>
+#include <stdio.h>
 /**
  * main - main block
- * Description: print the alphabets with the excption of 'q' and 'e'
- * Return (0)
+ * Description: print the alphabets with the exception of 'q' and 'e'
+ * Return: (0)
  */
 int main(void)
 {
@@ -11,12 +11,10 @@ int main(void)
 	while (c <= 'z')
 	{
 		if (c != 'q' && c != 'e')
-			putchar(c);
+			putchar (c);
 		c++;
 	}
-	putchar('\n');
+	putchar ('\n');
 
 	return (0);
 }
-
-
