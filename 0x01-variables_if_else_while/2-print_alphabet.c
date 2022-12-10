@@ -1,19 +1,26 @@
 #include <stdio.h>
+#include <time.h>
 #include <stdlib.h>
 /**
  * main - main block
- * Discription: write a program that prints the alphabets in lowercase
+ * Description: Use `putchar` function to print the alphabet in lowercase.
  * Return: 0
  */
 int main(void)
 {
-	char c = "a";
+	int n;
+	int c;
 
-	while (c <= "z")
-	{
-		putchar(c);
-		c++;
-	}
-	putchar("\n");
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	c = n % 10;
+
+	if (c > 5)
+		printf("last digit of %d is %d and is greater than 5\n", n, c);
+	else if (c == 0)
+		printf("last digit of %d is %d and is 0\n", n, c);
+	else
+		printf("last digit of %d is %d and is less than 6 and not 0\n", n, c);
+
 	return (0);
 }
