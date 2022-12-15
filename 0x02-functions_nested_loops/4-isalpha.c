@@ -1,5 +1,8 @@
 #include "main.h"
+<<<<<<< HEAD
 
+=======
+>>>>>>> 316c2c786d3aa06be1c9477e9ec5e84babf0a9c6
 /**
  * _isalpha - Check Main
  * @c: An input character
@@ -9,6 +12,7 @@
  */
 int _isalpha(int c)
 {
+<<<<<<< HEAD
 	char big, small;
 
 	int letter = 0;
@@ -22,4 +26,18 @@ int _isalpha(int c)
 		}
 	}
 	return (letter);
+=======
+	char lower, upper;
+	int isletter = 0;
+
+	for (lower = 'a'; lower <= 'z'; lower++)
+	{
+		for (upper = 'A'; upper <= 'Z'; upper++)
+		{
+			if (c == lower || c == upper)
+				isletter = 1;
+		}
+	}
+	return (isletter);
+>>>>>>> 316c2c786d3aa06be1c9477e9ec5e84babf0a9c6
 }

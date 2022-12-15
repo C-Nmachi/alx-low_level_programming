@@ -1,24 +1,21 @@
 #include "main.h"
-
 /**
- * _islower - Short description, single line
- * @c: contains value to be compared
- *  Description: it uses putchar to print lowercase 10x
+ * _islower - Check main
+ * @c: input checked
+ * Description: it uses putchar to print lowercase 10x
  *
- * Return: Always 0.
+ * Return: Always 0
  */
 int _islower(int c)
 {
-	char o;
+	char j;
+	int m = 0;
 
-	int n = 0;
-
-
-	for (o = 'a'; o <= 'z'; o++)
+	for (j = 'a'; j <= 'z'; j++)
 	{
-		if (o == c)
-			n = 1;
+		if (j == c)
+			m = 1;
 	}
 
-	return (n);
+	return (m);
 }
